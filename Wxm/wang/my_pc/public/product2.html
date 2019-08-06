@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product2</title>
+   <link rel="stylesheet" href="css/all.css">
+    <style>
+   .product_tag {
+    padding-top: 20px;
+    font-size: 13px;
+    overflow: hidden;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+    display: flex;
+}
+.clearfix{
+    zoom:1;
+}
+.product_tag_item {
+    width: 785px;
+    float: left;
+    height: 35px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fade{height:36px;}
+.out{height:200px}
+   </style>
+</head>
+<body>
+<header id="header"></header>
+ <div class="main">
+   <div class="product_tag_list">
+   <div class="tag_warp product_tag clearfix">
+       <div class="product_tag_brand">品牌：</div>
+       <ul class="product_tag_item" id="list">
+           <li id="ames">ames</li>
+           <li>ANDRESGALLARDO</li>
+           <li>Annaya</li>
+           <li>JANAVI</li>
+           <li>JEWELVARY</li>
+           <li>JONATHAN ADLER</li>
+           <li>Bao Bao Wan</li>
+           <li>BERNARDAUD</li>
+           <li>BLEU BLEUET</li>
+           <li>CHRISTIAN TORTU</li>
+           <li>GLAM EVER</li>
+           <li>HANDHANDHAND</li>
+           <li>JANAVI</li>
+           <li>JEWELVARY</li>
+           <li>JONATHAN ADLER</li>
+       </ul>
+       <div class="show_more" style="display:block" data-toggle="brandlist" id="more">更多</div>
+    </div> 
+      <div class="tag_warp product_tag clearfix">
+            <div class="product_tag_brand">标签：</div>
+            <ul class="product_tag_item">
+                <li>T-B-H</li>
+            </ul>
+     </div> 
+     <div class="tag_order product_tag clearfix">
+            <div class="product_tag_brand">排序</div>
+            <ul class="product_tag_item">
+                <li class="active" data-type>默认排序</li>
+                <li  data-type="time">按时间排序</li>
+                <li  data-type="price" data-order="asc">按价格从低到高</li>
+                <li  data-type="price" data-order="desc">按价格从低到高</li>
+            </ul>
+     </div> 
+   </div>
+   <div id="product_list" class="center">
+    <div class="block_product left" id=p1>
+        <a href="#">
+            <img src="#"  width="300" height="313">
+            <span></span>
+            <span class="name"></span>
+            <span></span>
+            <span class="price"></span>
+        </a>
+        <h2>
+            <a href="" ></a>
+        </h2>
+    </div>
+    <div class="block_product left" id=p2>
+     
+    </div>
+    <div class="block_product left" id=p3>
+       
+    </div>
+    <div class="block_product left" id=p4>
+        
+    </div>
+    <div class="block_product left" id=p5>
+       
+    </div>
+    <div class="block_product left" id=p6>
+  
+    </div>
+   </div>
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script src="js/product2.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+    if($("#more").html()=="更多"){     
+        $("#more").click(function(){
+        // console.log( $("#list:lt(6)"));
+        $("#list").css("height","150px")
+        $(this).html("收起");
+    //  console.log($("#more").html());
+    })
+}else if($("#more").html()=="收起"){
+    
+    $("#more").click(function(){
+       
+        // console.log( $("#list:lt(6)"));
+        $(".product_tag_item").css("height","35px")
+        console.log(1)
+        $("#more").html("更多");
+    //  console.log("$btn.html()");  
+})
+}
+
+//      if($btn.html()=="收起"){
+//     $("#list")
+//        .css("height","36px");
+//   }
+// var a=$btn.html();
+// console.log(a);
+// console.log($("#list"))
+// if(a==="更多"){
+//     $("#list")
+//    .css("height","150px");
+//     $("#list").html("收起");
+
+// }else{
+// $("#list").css("height","36px");
+// }
+// });
+
+    
+
+
+</script>
+</body>
+</html>

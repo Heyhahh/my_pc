@@ -1,0 +1,54 @@
+ #icenter {position:relative;	margin-top:12px} 
+ #icenter a {	position:absolute;	z-index:9;}
+#icenter img {	position:absolute;	z-index:997;}
+#icenter .t img{ position:relative;}
+.center {	width:960px;	font-size:12px;	margin:0px auto;	position:relative;}
+.gonggao {	text-align:left;	border: 1px solid #666;	padding: 5px;	 line-height:26px;	min-height:26px;}
+.gonggao a {	text-decoration:underline;}
+.block_12{ clear:both; display:block; width:100%; height:12px;}
+.block_0{ clear:both; display:block; width:100%; height:0px;}
+.t{ position:relative; clear:both; text-align:center;}
+.bb{ position:relative; height:474px;}
+.bh{ position:relative;height:286px;}
+.bc{ position:relative;height:289px;}
+.bb .i1 {	left:0px;	top: 0px;}
+.bb .i2 {	left:243px;	top: 0px;}
+.bb .i3 {	left:486px;	top: 0px;}
+.bb .i4 {	left:729px;	top: 0px;}
+.bb .i5 {	left:0px;	top:243px;}
+.bb .i6 {	left:243px;	top:243px;}
+.bb .i7 {	left:486px;	top:243px;}
+.bb .i8 {	left:729px;	top:243px;}
+.bh .i1 {	left:0px;	top: 0px;}
+.bh .i2 {	left:243px;	top: 0px;}
+.bh .i3 {	left:486px;	top: 0px;}
+.bh .i4 {	left:729px;	top: 0px;}
+.bc .i1 {	left:0px;	top:0px;}
+.bc .i2 {	left:325px;	top: 0px;}
+.bc .i3 {	left:650px;	top: 0px;}
+.ieditmenu p {	z-index:999;	position:absolute;	margin:0px;	font-size:12px;}
+.ieditmenu p a {	
+       display:inline-block;	background:#000;	color:#fff;	opacity: 0.3;	cursor:pointer;	height:21px;	line-height:21px;	width:36px;	text-align:center;
+    }
+.ieditmenu p a:hover {	opacity:0.7;	font-weight:bold;}
+#icenter .index_hover {	background:#000;	position:absolute;	margin:0px;	z-index:90;	opacity:0.9;}#icenter .imgblock:hover .index_hover, 
+#icenter .imgblock:hover .index_text {	display:block;}
+#icenter .imgblock .index_hover, #icenter .imgblock .index_text {	display:none;	font-family:"Open Sans";}
+#icenter .index_text {	position:absolute;	z-index:99;}
+.index_text .index_textin {	display:table;	_position:relative;	overflow:hidden;}
+.index_text .index_textin .text_middle {	
+    vertical-align:middle;	display:table-cell;	_position:absolute;	_top:50%;	text-align:center;	border:none;}
+.index_text .index_textin .text_middle .text_text {	_position:relative;	_top:-50%;	text-align:center;	color:#fff;}
+.index_text .index_textin .text_middle .text_text div {	padding:4px 0px;}
+.big02 .text_text .i_brand {	font-size:26px;}
+.big01 .text_text .i_brand {	font-size:20px;}
+.small1 .text_text .i_brand {	font-size:15px;}
+.big01 .text_text .i_title, .small1 .text_text .i_title {	font-size:23px;	font-weight:bold;}
+.big02 .text_text .i_title {	font-size:32px;	font-weight:bold;}
+small1 .text_text .i_title {	font-size:15px;}
+.big01 .text_text .i_subtitled.small1 .text_text .i_subtitled 
+{	font-size:13px;	opacity:0.7;}
+.big02 .text_text .i_subtitled {	font-size:18px;	opacity:0.7;}
+.text_text .i_price {	font-size:50px;	font-weight:bold;	padding-top:20px !important;}
+.text_text .i_price samp {	font-size:18px;}
+.text_text .i_w, .text_text .i_h {	display:none;} 
