@@ -55,7 +55,7 @@ app.get("/product1", (req, res) => {
     //商品列表2
 app.get("/product2", (req, res) => {
         var uid = req.query.uid;
-        console.log(uid);
+        // console.log(uid);
         var sql = `SELECT * FROM product_list2  WHERE uid=?`;
         pool.query(sql, [uid], (err, result) => {
             if (err) {
@@ -69,7 +69,7 @@ app.get("/product2", (req, res) => {
 //ames
 app.get("/ames", (req, res) => {
         var uid = req.query.uid;
-        console.log(uid);
+        // console.log(uid);
         var sql = `SELECT * FROM product_list2 WHERE uid=?`;
         pool.query(sql, [uid], (err, result) => {
             if (err) {
@@ -91,7 +91,7 @@ app.get("/details", (req, res) => {
             res.send({ code: 0 });
         } else {
             res.send(result);
-            console.log(result);
+            // console.log(result);
         }
     })
 })

@@ -269,8 +269,8 @@ margin-left: 25px;
     display: block;
 }
 
-/* .beast-menu :hover .beast-menu__content { 
+.beast-menu :hover .beast-menu__content { 
  height:280px; 
  transition:all .3s linear .3s ; 
- }  */
+ }  
 

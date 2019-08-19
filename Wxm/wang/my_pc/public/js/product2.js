@@ -125,7 +125,7 @@ $("block_product left").innerHTML='';
            <span>￥${p1.price}</span>
          </a>
           <h2>
-           <a href="" ></a>
+           <a href="http://127.0.0.1:8080/details.html" ></a>
          </h2>
        </div>`;
        document.getElementById("p1").innerHTML=html;
@@ -141,7 +141,7 @@ $("block_product left").innerHTML='';
         <span>￥${p2.price.toFixed(2)}</span>
       </a>
        <h2>
-        <a href="" ></a>
+        <a href="http://127.0.0.1:8080/details.html" ></a>
       </h2>
     </div>`;
     document.getElementById("p2").innerHTML=html;
@@ -157,7 +157,7 @@ $("block_product left").innerHTML='';
         <span>￥${p3.price.toFixed(2)}</span>
       </a>
        <h2>
-        <a href="" ></a>
+        <a href="http://127.0.0.1:8080/details.html" ></a>
       </h2>
     </div>`;
     document.getElementById("p3").innerHTML=html;
@@ -172,7 +172,7 @@ $("block_product left").innerHTML='';
        <span>￥${p4.price.toFixed(2)}</span>
      </a>
       <h2>
-       <a href="" ></a>
+       <a href="http://127.0.0.1:8080/details.html" ></a>
      </h2>
    </div>`;
    document.getElementById("p4").innerHTML=html
@@ -187,7 +187,7 @@ $("block_product left").innerHTML='';
       <span>￥${p5.price.toFixed(2)}</span>
     </a>
      <h2>
-      <a href="" ></a>
+      <a href="http://127.0.0.1:8080/details.html" ></a>
     </h2>
   </div>`;
   document.getElementById("p5").innerHTML=html
@@ -202,7 +202,7 @@ $("block_product left").innerHTML='';
      <span>￥${p6.price.toFixed(2)}</span>
    </a>
     <h2>
-     <a href="" ></a>
+     <a href="http://127.0.0.1:8080/details.html" ></a>
    </h2>
  </div>`;
  document.getElementById("p6").innerHTML=html

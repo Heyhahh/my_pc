@@ -9,13 +9,13 @@ $(function(){
   //  data:{},
    dataType:"json",//返回值类型
    success:function(result){
-    console.log(result);
+    // console.log(result);
     var p1=result;
     var html="";
     for(var p of result){
     // console.log(p);
    var $html =$(`<div class="block_product left" id="p1">
-    <a href="http://127.0.0.1:8080/details.html">
+    <a href="http://127.0.0.1:8080/details.html?lid=1"">
     <img src="${p.img_url}" alt="" title="" width="300" height="303">
     <span>${p.title}</span>
     <span>${p.subtitle}</span>
@@ -23,7 +23,7 @@ $(function(){
     <span>￥${p.price.toFixed(2)}</span>
     </a>
     <h2>
-    <a href="http://127.0.0.1:8080/details.html" ></a>
+    <a href="http://127.0.0.1:8080/details.html ></a>
     </h2>
    </div>`);
    $("#product_list").append($html);
