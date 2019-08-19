@@ -1,3 +1,5 @@
+SET NAMES UTF8;
+USE   project;
 CREATE TABLE `product_list2` (
   `lid` int(11) PRIMARY KEY AUTO_INCREMENT,
   `title` varchar(128) ,
@@ -5,7 +7,7 @@ CREATE TABLE `product_list2` (
   `price` decimal(10,2) ,
   `img_url` varchar(255) ,
   `uid` int(11) 
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) 
 
 
 INSERT INTO `product_list2` (`lid`, `title`, `subtitle`, `price`, `img_url`, `uid`) VALUES

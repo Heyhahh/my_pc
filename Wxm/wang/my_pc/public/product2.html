@@ -28,6 +28,9 @@
 }
 .fade{height:36px;}
 .out{height:200px}
+.product_tag_list{
+  margin-top: 5px;
+}
    </style>
 </head>
 <body>
@@ -106,8 +109,8 @@
 <script src="js/footer.js"></script>
 <script src="js/header.js"></script>
 <script src="js/product2.js"></script>
-<script src="js/jquery-3.2.1.js"></script>
 <script>
+    /*
     if($("#more").html()=="更多"){     
         $("#more").click(function(){
         // console.log( $("#list:lt(6)"));
@@ -126,26 +129,20 @@
     //  console.log("$btn.html()");  
 })
 }
-
-//      if($btn.html()=="收起"){
-//     $("#list")
-//        .css("height","36px");
-//   }
-// var a=$btn.html();
-// console.log(a);
-// console.log($("#list"))
-// if(a==="更多"){
-//     $("#list")
-//    .css("height","150px");
-//     $("#list").html("收起");
-
-// }else{
-// $("#list").css("height","36px");
-// }
-// });
-
-    
-
+*/
+// 查找要修改的元素并绑定事件
+$("#more").click(function(){
+// 查找要修改的元素并且修改元素
+ var $list=$("#list");
+ var $btn=$(this);
+ if($btn.html()=="更多"){
+     $list.css("height","150px");
+     $btn.html("收起");
+ }else{
+     $list.css("height","35px");
+     $btn.html("更多");
+ }
+})
 
 </script>
 </body>

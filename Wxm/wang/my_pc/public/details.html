@@ -16,14 +16,14 @@
          <!-- 水印  -->
          <div class="pro-detail-watermark">
              <!-- 左边商品图片 8张-->
-             <img src="./images/details/1.jpg" alt="">
+             <!-- <img src="./images/details/1.jpg" alt="">
              <img src="./images/details/2.jpg" alt="">
              <img src="./images/details/3.jpg" alt="">
              <img src="./images/details/4.jpg" alt="">
              <img src="./images/details/5.jpg" alt="">
              <img src="./images/details/6.jpg" alt="">
              <img src="./images/details/7.jpg" alt="">
-             <img src="./images/details/8.jpg" alt="">
+             <img src="./images/details/8.jpg" alt=""> -->
          </div>
       </div>
       <div class="right" id="product_intro">
@@ -40,7 +40,7 @@
          </div>
          <div class="open" id="labels-warp">
            <div class="labels">
-               <div class="ht-pro-tips-tag detail-tag-no-m clearfix">
+               <div class="ht-pro-tips-tag detail-tag-no-m clearfix"> 
                    <div class="detail-icon-item">换购</div>
                    <p class="no-fl">莫奈拎袋加价购</p>
                </div>
@@ -50,12 +50,19 @@
                 </div>
                 <div class="ht-pro-tips-tag detail-tag-no-m clearfix">
                         <div class="detail-icon-item">换购</div>
-                        <p class="no-fl">莫奈拎袋加价购</p>
+                        <p class="no-fl">线上订单换购莫奈拎袋（小号）</p>
                  </div>   
                  <div class="ht-pro-tips-tag detail-tag-no-m clearfix">
                             <div class="detail-icon-item">换购</div>
-                            <p class="no-fl">莫奈拎袋加价购</p>
+                            <p class="no-fl">线上订单换购莫奈拎袋（大号）</p>
                 </div>
+                <div class="ht-pro-tips-tag detail-tag-no-m clearfix">
+                    <div class="detail-icon-item">换购</div>
+                    <p class="no-fl">线上订单换购莫奈拎袋（中号）</p>
+          </div>
+           </div>
+           <div class="labels-more">
+                <div class="arrow"></div>
            </div>
          </div>
          <div class="subItemDiv">
@@ -178,4 +185,21 @@
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script>
+// dom四步 查找触发事件的元素  绑定事件  查找要修改的元素  修改元素
+$(".arrow").click(function(){
+    //查找要修改的元素并修改元素
+    var $div=$("#labels-warp");
+
+    console.log($div.prop("class"));
+    if($div.prop("class")=="open"){
+$("#labels-warp").prop("class","close");
+}else{
+
+    $("#labels-warp").prop("class","open") 
+ 
+}
+})
+
+</script>
 </html>

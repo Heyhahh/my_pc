@@ -1,0 +1,13 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS project;
+CREATE DATABASE project CHARSET=UTF8;
+USE project;
+
+CREATE TABLE p_login(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  uname VARCHAR(50),
+  upwd  VARCHAR(32)
+);
+INSERT INTO p_login VALUES(null,'Wang','123456');
+
+INSERT INTO p_login VALUES(null,'tom','123456');

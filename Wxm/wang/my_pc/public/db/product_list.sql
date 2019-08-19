@@ -1,3 +1,5 @@
+SET NAMES UTF8;
+USE   project;
 CREATE TABLE `product_list` (
   `lid` int(11) PRIMARY KEY AUTO_INCREMENT,
   `title` varchar(128) ,

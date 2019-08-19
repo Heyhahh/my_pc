@@ -4,7 +4,7 @@
 body{ background:#fff; margin:0px;
     font: 13px/1.5 "PingFang SC","Microsoft YaHei",tahoma,arial,"\5b8b\4f53",sans-serif
 }
-/* a{ color:#000; cursor:pointer;} */
+ /* a{ color:#000; cursor:pointer;}  */
 ul,li,a,p,div{ list-style:none; margin:0px; padding:0px; text-decoration:none;}
 .show_table{ display:block !important;}
 .show_mob{ display:none !important;}

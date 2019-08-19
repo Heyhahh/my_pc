@@ -36,7 +36,7 @@ a {
     color: #000;
     cursor: pointer;
 }
-#product_show .brand a{
+#product_show .brand {
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
@@ -52,23 +52,43 @@ a {
     color: #004C46;
     font-size: 20px;
     margin-bottom: 5px;
-    border-bottom:1px solid #E1E1E1;
+    /* border-bottom:1px solid #E1E1E1; */
 }
+
 .open{
-    padding: 20px 0;
-   
-    border-bottom:1px solid #E1E1E1;
-    margin-bottom: -10px;
-}
-.open .labels {
+    padding: 10px 0;
     border-top:1px solid #E1E1E1;
+    border-bottom:1px solid #E1E1E1;
+    margin-bottom: 5px;
+    margin-top:20px;
+  }
+.close{
+        padding: 10px 0;
+        /* border-top:1px solid #E1E1E1; */
+        border-bottom:1px solid #E1E1E1;
+        margin-bottom: 5px;
+        margin-top:20px;
+      }
+.close .labels{
+    border-top:1px solid #E1E1E1;
+    max-height: 120px;
+    margin-top: -5px;
+}
+
+.labels{
+    position: relative;overflow: hidden;
+  }
+  .arrow{
+    width: 10px;
+    height: 6px;
+    margin:0 auto;
+    padding:5px;
+  }
+ 
+  .open .labels{
     max-height: 65px;
-}
-.labels {
-    position: relative;
-    overflow: hidden;
-}
-ht-pro-tips-tag div {
+  }
+.ht-pro-tips-tag div {
     float: left;
 }
 .ht-pro-tips-tag {
@@ -85,11 +105,16 @@ ht-pro-tips-tag div {
     color: #fff;
 }
 .detail-tag-no-m{
-   margin-top: 0 !important;
+   margin-top: 0px !important;
+}
+.ht-pro-tips-tag {
+    margin-top: -15px;
+    margin-bottom: 5px;
 }
 .clearfix, .row {
     zoom: 1;
-}p.required {
+}
+p.required {
     font-size: 11px;
     text-align: left;
     color: #EB340A;
@@ -143,4 +168,18 @@ select{
 #product_show .block p{
 color: #828282;
 line-height: 1.5
+}
+.close .arrow {
+    background: url(../images/details/close-labels.png) no-repeat;
+    background-position: center center;
+}
+.open .arrow {
+    background: url(../images/details/open-labels.png) no-repeat;
+    background-position: center center;
+} 
+.arrow {
+    width: 10px;
+    height: 6px;
+    margin: 0 auto;
+    padding: 5px;
 }

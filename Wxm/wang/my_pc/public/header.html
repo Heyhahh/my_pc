@@ -20,8 +20,8 @@
                      <div class="form">
                        <input type="button" class="post" id="baidu_search">
                         <input type="text" class="text" id="skeyword">
-                          <div class="cart">
-                            <a id="a_count" href="#" ></a>
+                          <div class="cart_header">
+                            <a id="a_count" href="http://127.0.0.1:8080/cart.html" ></a>
                           </div>
                     </div>
                </div>  
@@ -669,17 +669,11 @@
   </div>
 
   <script>
-    // var d1= document.getElementById("d1")
-    // d1.onmouseenter = function(){
-    //   var li_content = document.querySelector(".beast-menu__content");
-    //   li_content.style.height = "300px";
-    // }
-    // d1.onmouseleave = function(){
-    //   var li_content = document.querySelector(".beast-menu__content");
-    //   li_content.style.height = "0px";
-    // }
-    
-    var _dates = new Date().getTime();
+   $(".beast-menu").mouseenter(function(){
+
+    $(".beast-menu__content").attr("height","280px");
+   })
+   
   </script>
   </header>
 <!-- </body>

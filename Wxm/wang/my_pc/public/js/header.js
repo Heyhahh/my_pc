@@ -27,9 +27,9 @@ $(function(){
         sessionStorage.setItem("name",uname);
         location.href="http://127.0.1:8080/index.html";
        }else if(result.code==-1){
-        $("#errpage").text("用户名不能为空！")
+        $("#uname_msg").html(`<img src='./images/login/err.png'></img> 用户名不能为空！`)
        }else if(result.code==-2){
-        $("#errpage").text("密码不能为空！")
+        $("#upwd_msg").html(`<img src='./images/login/err.png'></img> 密码不能为空！`)
        }else if(result.code==-3){
         $("#errpage").text("用户名和密码不正确！")
        }

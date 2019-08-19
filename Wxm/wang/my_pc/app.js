@@ -66,7 +66,7 @@ app.get("/product2", (req, res) => {
             }
         })
     })
-    //ames
+//ames
 app.get("/ames", (req, res) => {
         var uid = req.query.uid;
         console.log(uid);
@@ -80,7 +80,7 @@ app.get("/ames", (req, res) => {
             }
         })
     })
-    //deatils
+ //deatils
 app.get("/details", (req, res) => {
     var lid = req.query.lid;
     console.log(lid);

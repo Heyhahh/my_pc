@@ -7,10 +7,10 @@ $(function(){
         type:"get",
         dataType:"json",
         success:function(result){
-        console.log(result);
+        // console.log(result);
    
             var p1=result[0];
-            console.log(p1);
+            // console.log(p1);
             var html=`   <div class="block_product left" >
             <a href="#">
              <img src="${p1.img_url}" alt="" title="" width="300" height="303">

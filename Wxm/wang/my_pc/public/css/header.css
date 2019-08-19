@@ -43,7 +43,7 @@ li{
     margin: 0 auto;
     width:960px;
 }
- .k-show-head{
+.k-show-head{
     display: flex;
     width:960px;
     height:32px;
@@ -113,7 +113,7 @@ li{
      padding-left: 35px;
      box-sizing: border-box;
 }
-.cart{
+.cart_header{
     width:50px;
     padding-left: 202px; 
 }
@@ -150,12 +150,14 @@ li{
         position: absolute;
         top: 125px; 
         width: 100%;
-        height: 0;
         padding-left:20px;
         padding-right: 20px;
-        left:180px;
+        left:24%;
         background: #fff;
         z-index: 999;
+        height: 0;
+        overflow: hidden;
+        /* padding-top:20px; */
         /* overflow: hidden;   */
     }
     .item-1{
@@ -262,18 +264,13 @@ margin-left: 25px;
     /* line-height: 1.35; */
     /* display: flex; */
 } 
-/* 点击出现 */
- .beast-menu .beast-menu__content{
-    height: 0;
-    overflow: hidden;
- } 
+
 .beast-menu__title:hover  .m-line{
     display: block;
 }
 
- .beast-menu :hover .beast-menu__content {
-     /* animation: show 0.2s linear 0.2s forwards;  */
-    height:280px;
-    transition:all .3s linear .3s ; 
-} 
+/* .beast-menu :hover .beast-menu__content { 
+ height:280px; 
+ transition:all .3s linear .3s ; 
+ }  */
 

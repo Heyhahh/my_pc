@@ -1,5 +1,6 @@
 $(function(){
-    var lid=location.search.split("=")[1];
+    // var lid=location.search.split("=")[1];
+    var lid=1;
     // console.log(lid);
     $.ajax({
         data:{lid},
@@ -8,6 +9,18 @@ $(function(){
         url:"http://127.0.0.1:8080/details",
         success:function(result){
         console.log(result);
+        var $html=$(`
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        <img src="$(result.img_url1)" alt="">
+        `
+        )
+        $(".pro-detail-watermark").append($html);
         }
     })
 })
